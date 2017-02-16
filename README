@@ -26,6 +26,22 @@ This worked for me to build and compile it.
   * install Code::Blocks from http://www.codeblocks.org/downloads
   * from Code::Blocks open cataclysm.cbp and then click Build
 
+  * I have msys64 and Code::Blocks in a USB. Make sure you have these set in your system
+  or run mingw64 and Code::Blocks with a batch file similar to these. These are at the same level as the CodeBlocks and msys64 directories. What these do is create temporary settings for my system path because my dev environment is in a USB and I don't want to pollute the system path of the computers I run these from.
+  Run_CodeBlocks.bat:
+	setlocal
+	set PDCURSES_SRCDIR = %~dp0\msys64\home\_extra\pdcurses\	path=%~dp0\msys64\msysw64\bin;%~dp0\msys64\usr\bin;%~dp0\msys64\mingw64\include;%~dp0\msys64\mingw64\include\SDL2\;%~dp0\msys64\home\_extra\pdcurses\;%path%
+	%~dp0\CodeBlocks\_RUN\codeblocks.exe
+	pause
+	endlocal
+  Run_Mingw64.bat:
+	setlocal
+	set PDCURSES_SRCDIR= %~dp0\msys64\home\_extra\pdcurses\
+	path=%~dp0\msys64\mingw64\bin;%path%
+	%~dp0\msys64\mingw64.exe
+	pause
+	endlocal
+ 
   * Good luck!
 ================================================================================
 Cataclysm is a post-apocalyptic roguelike, set in the countryside of New England
