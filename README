@@ -1,3 +1,33 @@
+These files are a fork of 2017/02/16 Whales' Cataclysm at https://github.com/Whales/Cataclysm
+The files have been modified to build and compile in Windows using Code::Blocks.
+
+This worked for me to build and compile it.
+* install Msys64 for 64 bit computers go to  https://github.com/msys2/msys2/wiki/MSYS2-installation and click on the "64 bit" link. Download the file that looks like msys2-x86_64-20161025.exe
+* Now you need to update Mingw64 in your msys64 folder:
+  ** run msys64\mingw64.exe
+  ** once its command shell opens update it by typing: pacman -Syuu
+  ** it will get stuck saying you need to close it. Click on the X in the window to close it.
+  ** run msys64\mingw64.exe again
+  ** again type: pacman -Syuu
+  ** These are all needed for Cataclysm-DDA and some are not needed for Cataclysm, but I installed them all:
+	pacman -S mingw-w64-x86_64-gcc
+	pacman -S mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_image mingw-w64-x86_64-SDL2_mixer mingw-w64-x86_64-SDL2_ttf
+	pacman -S mingw-w64-x86_64-ncurses
+	pacman -S mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libwebp
+	pacman -S git make
+	pacman -S mingw-w64-x86_64-lua
+	pacman -S mingw-w64-x86_64-clang mingw-w64-i686-clang
+	
+  ** Download pdcurses at http://pdcurses.sourceforge.net/. The file it offered me was at sourceforge, pdcurs34.zip
+  ** I uninstalled pdcurs34 into folder msys64\home\_extra\pdcurses that I use to store these things.
+  
+  * Manually edit file Cataclysm.cbp so that the paths are those in your computer.
+
+  * install Code::Blocks from http://www.codeblocks.org/downloads
+  * from Code::Blocks open cataclysm.cbp and then click Build
+
+  * Good luck!
+================================================================================
 Cataclysm is a post-apocalyptic roguelike, set in the countryside of New England
 after a devastating plague of monsters and zombies.
 
