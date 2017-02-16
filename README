@@ -1,5 +1,5 @@
 These files are a fork of 2017/02/16 Whales' Cataclysm at https://github.com/Whales/Cataclysm
-The files have been modified to build and compile in Windows using Code::Blocks.
+The files have been modified to build and compile in Windows using Code::Blocks and MinGW64.
 
 This worked for me to build and compile it.
 * install Msys64 for 64 bit computers go to  https://github.com/msys2/msys2/wiki/MSYS2-installation and click on the "64 bit" link. Download the file that looks like msys2-x86_64-20161025.exe
