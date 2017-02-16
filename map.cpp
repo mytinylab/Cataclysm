@@ -225,7 +225,7 @@ bool map::displace_vehicle (game *g, int &x, int &y, int dx, int dy, bool test=f
   player *psg = psgs[i];
   int p = psg_parts[i];
   if (!psg) {
-   debugmsg ("empty passenger part %d pcoord=%d,%d u=%d,%d?", p, 
+   debugmsg ("empty passenger part %d pcoord=%d,%d u=%d,%d?", p,
              veh->global_x() + veh->parts[p].precalc_dx[0],
              veh->global_y() + veh->parts[p].precalc_dy[0],
                       g->u.posx, g->u.posy);
@@ -557,7 +557,7 @@ ter_id& map::ter(int x, int y)
 {
  if (!INBOUNDS(x, y)) {
   nulter = t_null;
-  return nulter;	// Out-of-bounds - null terrain 
+  return nulter;	// Out-of-bounds - null terrain
  }
 /*
  int nonant;
@@ -1520,7 +1520,7 @@ void map::process_active_items(game *g)
   }
  }
 }
-     
+
 void map::process_active_items_in_submap(game *g, int nonant)
 {
  it_tool* tmp;
@@ -1533,7 +1533,7 @@ void map::process_active_items_in_submap(game *g, int nonant)
      if (!(*items)[n].is_tool()) { // It's probably a charger gun
       (*items)[n].active = false;
       (*items)[n].charges = 0;
-     } else { 
+     } else {
       tmp = dynamic_cast<it_tool*>((*items)[n].type);
       (use.*tmp->use)(g, &(g->u), &((*items)[n]), true);
       if (tmp->turns_per_charge > 0 && int(g->turn) % tmp->turns_per_charge ==0)
@@ -1631,7 +1631,7 @@ void map::use_charges(point origin, int range, itype_id type, int quantity)
   }
  }
 }
- 
+
 trap_id& map::tr_at(int x, int y)
 {
  if (!INBOUNDS(x, y)) {
@@ -1656,7 +1656,7 @@ trap_id& map::tr_at(int x, int y)
   nultrap = terlist[ grid[nonant]->ter[x][y] ].trap;
   return nultrap;
  }
- 
+
  return grid[nonant]->trp[x][y];
 }
 
@@ -1707,7 +1707,7 @@ void map::disarm_trap(game *g, int x, int y)
    g->u.practice(sk_traps, 2*diff);
  }
 }
- 
+
 field& map::field_at(int x, int y)
 {
  if (!INBOUNDS(x, y)) {
@@ -1839,7 +1839,7 @@ void map::drawsq(WINDOW* w, player &u, int x, int y, bool invert,
  nc_color tercol;
  long sym = terlist[ter(x, y)].sym;
  bool hi = false;
- bool normal_tercol = false, drew_field = false; 
+ bool normal_tercol = false, drew_field = false;
  if (u.has_disease(DI_BOOMERED))
   tercol = c_magenta;
  else if ((u.is_wearing(itm_goggles_nv) && u.has_active_item(itm_UPS_on)) ||
@@ -1913,6 +1913,7 @@ void map::drawsq(WINDOW* w, player &u, int x, int y, bool invert,
 }
 
 //WIP: faster map::sees
+/*
 bool map::sees(int Fx, int Fy, int Tx, int Ty, int range, int &tc)
 {
  int dx = abs(Tx - Fx);
@@ -1926,7 +1927,8 @@ bool map::sees(int Fx, int Fy, int Tx, int Ty, int range, int &tc)
   return true;
  }
  for (int x = Fx; x <= Tx; x++) {
-  int Yhl = 
+  int Yhl =
+*/
 
 /*
 map::sees based off code by Steve Register [arns@arns.freeservers.com]
@@ -1944,7 +1946,7 @@ bool map::sees(int Fx, int Fy, int Tx, int Ty, int range, int &tc)
  int y = Fy;
  int t = 0;
  int st;
- 
+
  if (range >= 0 && (abs(dx) > range || abs(dy) > range))
   return false;	// Out of range!
  if (ax > ay) { // Mostly-horizontal line
@@ -2007,7 +2009,7 @@ bool map::clear_path(int Fx, int Fy, int Tx, int Ty, int range, int cost_min,
  int y = Fy;
  int t = 0;
  int st;
- 
+
  if (range >= 0 && (abs(dx) > range || abs(dy) > range))
   return false;	// Out of range!
  if (ax > ay) { // Mostly-horizontal line
@@ -2360,7 +2362,7 @@ void map::spawn_monsters(game *g)
       tmp.friendly = -1;
      int fx = mx + gx * SEEX, fy = my + gy * SEEY;
 
-     while ((!g->is_empty(fx, fy) || !tmp.can_move_to(g->m, fx, fy)) && 
+     while ((!g->is_empty(fx, fy) || !tmp.can_move_to(g->m, fx, fy)) &&
             tries < 10) {
       mx = (grid[n]->spawns[i].posx + rng(-3, 3)) % SEEX;
       my = (grid[n]->spawns[i].posy + rng(-3, 3)) % SEEY;

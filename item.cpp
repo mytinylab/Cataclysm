@@ -179,7 +179,7 @@ bool item::stacks_with(item rhs)
  if (corpse != NULL && rhs.corpse != NULL &&
      corpse->id != rhs.corpse->id)
   return false;
-  
+
  if (contents.size() != rhs.contents.size())
   return false;
 
@@ -188,7 +188,7 @@ bool item::stacks_with(item rhs)
 
  return stacks;
 }
- 
+
 void item::put_in(item payload)
 {
  contents.push_back(payload);
@@ -263,7 +263,7 @@ void item::load_info(std::string data, game *g)
  else
   curammo = NULL;
 }
- 
+
 std::string item::info(bool showtext)
 {
  std::stringstream dump;
@@ -279,7 +279,7 @@ std::string item::info(bool showtext)
   it_comest* food = dynamic_cast<it_comest*>(type);
   dump << " Nutrition: " << int(food->nutr) << "\n Quench: " <<
           int(food->quench) << "\n Enjoyability: " << int(food->fun) <<
-          "\n Healthiness: " << int(food->health);
+          "\n Healthiness: " << int(food->healthy);
 
  } else if (is_food_container()) {
 
@@ -304,7 +304,7 @@ std::string item::info(bool showtext)
    ammo_dam = curammo->damage;
    ammo_recoil = curammo->recoil;
   }
-   
+
   dump << " Skill used: " << skill_name(gun->skill_used) << "\n Ammunition: " <<
           clip_size() << " rounds of " << ammo_name(ammo_type());
 
@@ -639,7 +639,7 @@ int item::weight()
   return ret;
  }
  int ret = type->weight;
- if (is_ammo()) { 
+ if (is_ammo()) {
   ret *= charges;
   ret /= 100;
  }
@@ -833,7 +833,7 @@ style_move item::style_data(technique_id tech)
 
  return ret;
 }
- 
+
 bool item::is_two_handed(player *u)
 {
  if (is_gun() && (dynamic_cast<it_gun*>(type))->skill_used != sk_pistol)
@@ -1133,7 +1133,7 @@ int item::range(player *p)
 
  return ret;
 }
- 
+
 
 ammotype item::ammo_type()
 {
@@ -1157,7 +1157,7 @@ ammotype item::ammo_type()
  }
  return AT_NULL;
 }
- 
+
 int item::pick_reload_ammo(player &u, bool interactive)
 {
  if (!type->is_gun() && !type->is_tool()) {

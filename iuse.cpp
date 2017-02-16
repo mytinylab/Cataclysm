@@ -53,7 +53,7 @@ void iuse::royal_jelly(game *g, player *p, item *it, bool t)
   g->add_msg(message.c_str());
 }
 
-void iuse::bandage(game *g, player *p, item *it, bool t) 
+void iuse::bandage(game *g, player *p, item *it, bool t)
 {
  int bonus = p->sklevel[sk_firstaid];
  hp_part healed;
@@ -72,7 +72,7 @@ void iuse::bandage(game *g, player *p, item *it, bool t)
    }
   }
  } else { // Player--present a menu
-   
+
   WINDOW* w = newwin(10, 20, 8, 1);
   wborder(w, LINE_XOXO, LINE_XOXO, LINE_OXOX, LINE_OXOX,
              LINE_OXXO, LINE_OOXX, LINE_XXOO, LINE_XOOX );
@@ -180,7 +180,7 @@ void iuse::bandage(game *g, player *p, item *it, bool t)
  p->heal(healed, dam);
 }
 
-void iuse::firstaid(game *g, player *p, item *it, bool t) 
+void iuse::firstaid(game *g, player *p, item *it, bool t)
 {
  int bonus = p->sklevel[sk_firstaid];
  hp_part healed;
@@ -199,7 +199,7 @@ void iuse::firstaid(game *g, player *p, item *it, bool t)
    }
   }
  } else { // Player--present a menu
-   
+
   WINDOW* w = newwin(10, 20, 8, 1);
   wborder(w, LINE_XOXO, LINE_XOXO, LINE_OXOX, LINE_OXOX,
              LINE_OXXO, LINE_OOXX, LINE_XXOO, LINE_XOOX );
@@ -311,7 +311,7 @@ void iuse::vitamins(game *g, player *p, item *it, bool t)
 {
  if (p->has_disease(DI_TOOK_VITAMINS)) {
   if (p == &(g->u))
-   add_msg("You have the feeling that these vitamins won't do you any good.");
+   g->add_msg("You have the feeling that these vitamins won't do you any good.");
   return;
  }
 
@@ -652,8 +652,8 @@ void iuse::dogfood(game *g, player *p, item *it, bool t)
   g->add_msg("You spill the dogfood all over the ground.");
 
 }
-  
- 
+
+
 
 // TOOLS below this point!
 
@@ -933,7 +933,7 @@ void iuse::hammer(game *g, player *p, item *it, bool t)
   g->m.add_item(p->posx, p->posy, board);
  g->m.ter(dirx, diry) = newter;
 }
- 
+
 void iuse::light_off(game *g, player *p, item *it, bool t)
 {
  if (it->charges == 0)
@@ -944,7 +944,7 @@ void iuse::light_off(game *g, player *p, item *it, bool t)
   it->active = true;
  }
 }
- 
+
 void iuse::light_on(game *g, player *p, item *it, bool t)
 {
  if (t) {	// Normal use
@@ -1051,7 +1051,7 @@ void iuse::two_way_radio(game *g, player *p, item *it, bool t)
  delwin(w);
  refresh();
 }
- 
+
 void iuse::radio_off(game *g, player *p, item *it, bool t)
 {
  if (it->charges == 0)
@@ -1150,7 +1150,7 @@ void iuse::crowbar(game *g, player *p, item *it, bool t)
   } else {
    g->add_msg("You pry, but cannot open the crate.");
    p->moves -= 100;
-  } 
+  }
  } else {
   int nails = 0, boards = 0;
   ter_id newter;
@@ -1299,7 +1299,7 @@ void iuse::set_trap(game *g, player *p, item *it, bool t)
             query_yn("Bury the beartrap?"));
   type = (buried ? tr_beartrap_buried : tr_beartrap);
   message << "You " << (buried ? "bury" : "set") << " the beartrap.";
-  practice = (buried ? 7 : 4); 
+  practice = (buried ? 7 : 4);
   break;
  case itm_board_trap:
   message << "You set the board trap on the " << g->m.tername(posx, posy) <<
@@ -1516,7 +1516,7 @@ void iuse::pipebomb_act(game *g, player *p, item *it, bool t)
    g->explosion(pos.x, pos.y, rng(6, 14), rng(0, 4), false);
  }
 }
- 
+
 void iuse::grenade(game *g, player *p, item *it, bool t)
 {
  g->add_msg("You pull the pin on the grenade.");
@@ -1671,7 +1671,7 @@ void iuse::acidbomb(game *g, player *p, item *it, bool t)
  it->bday = int(g->turn);
  it->active = true;
 }
- 
+
 void iuse::acidbomb_act(game *g, player *p, item *it, bool t)
 {
  if (!p->has_item(it)) {
@@ -1700,7 +1700,7 @@ void iuse::molotov(game *g, player *p, item *it, bool t)
  it->bday = int(g->turn);
  it->active = true;
 }
- 
+
 void iuse::molotov_lit(game *g, player *p, item *it, bool t)
 {
  int age = int(g->turn) - it->bday;
@@ -1806,7 +1806,7 @@ void iuse::pheromone(game *g, player *p, item *it, bool t)
    g->add_msg("...and several nearby zombies turn friendly!");
  }
 }
- 
+
 
 void iuse::portal(game *g, player *p, item *it, bool t)
 {
@@ -1877,7 +1877,7 @@ void iuse::UPS_off(game *g, player *p, item *it, bool t)
   it->active = true;
  }
 }
- 
+
 void iuse::UPS_on(game *g, player *p, item *it, bool t)
 {
  if (t) {	// Normal use
@@ -1931,7 +1931,7 @@ void iuse::tazer(game *g, player *p, item *it, bool t)
    g->kill_mon(mondex, (p == &(g->u)));
   return;
  }
- 
+
  if (npcdex != -1) {
   npc *foe = dynamic_cast<npc*>(&g->active_npc[npcdex]);
   if (foe->attitude != NPCATT_FLEE)
@@ -2076,7 +2076,7 @@ void iuse::vacutainer(game *g, player *p, item *it, bool t)
 
  it->put_in(blood);
 }
- 
+
 
 /* MACGUFFIN FUNCTIONS
  * These functions should refer to it->associated_mission for the particulars

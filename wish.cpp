@@ -85,7 +85,7 @@ void game::wish()
   } else {	// Not searching; scroll by keys
    if (ch == 'j') a++;
    if (ch == 'k') a--;
-   if (ch == '/') { 
+   if (ch == '/') {
     search = true;
     pattern =  "";
     found = false;
@@ -237,7 +237,7 @@ void game::monster_wish()
    if (ch == 'j') a++;
    if (ch == 'k') a--;
    if (ch == 'f') friendly = !friendly;
-   if (ch == '/') { 
+   if (ch == '/') {
     search = true;
     pattern =  "";
     found = false;
@@ -316,7 +316,8 @@ void game::mutation_wish()
  int a = 0, shift = 0, result_selected = 0;
  int line;
  long ch = '.';
- bool search = false, found = false;
+ bool search = false;
+ bool found = false;
  std::string pattern;
  std::string info;
  std::vector<int> search_results;
@@ -387,7 +388,7 @@ void game::mutation_wish()
   } else {	// Not searching; scroll by keys
    if (ch == 'j') a++;
    if (ch == 'k') a--;
-   if (ch == '/') { 
+   if (ch == '/') {
     search = true;
     pattern =  "";
     found = false;

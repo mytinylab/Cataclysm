@@ -1,0 +1,27 @@
+# This is the options file.  It works similarly to keymap.txt: the format is
+# <option name> <option value>
+# <option value> may be any number, positive or negative.  If you use a
+# negative sign, do not put a space between it and the number.
+#
+# If # is at the start of a line, it is considered a comment and is ignored.
+# In-line commenting is not allowed.  I think.
+#
+# If you want to restore the default options, simply delete this file.
+# A new options.txt will be created next time you play.
+
+
+# If true, use C not F
+use_celsius F
+# If true, use Km/h not mphuse_metric_system F
+# If true, y/n prompts are case-sensitive, y and n are not accepted
+force_capital_yn T
+# If true, bright backgrounds are not used--some consoles are not compatible
+no_bright_backgrounds F
+# If true, use military time, not AM/PM
+24_hour F
+# If true, automatically follow the crosshair when firing/throwing
+snap_to_target F
+# If true, safemode will be on after starting a new game or loading
+safemode T
+# If true, auto-safemode will be on after starting a new game or loading
+autosafemode F

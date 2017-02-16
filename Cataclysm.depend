@@ -1,0 +1,1713 @@
+# depslib dependency file v1.0
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\action.cpp
+	"game.h"
+	"keypress.h"
+	<fstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\game.h
+	"mtype.h"
+	"monster.h"
+	"map.h"
+	"player.h"
+	"overmap.h"
+	"omdata.h"
+	"mapitems.h"
+	"crafting.h"
+	"trap.h"
+	"npc.h"
+	"faction.h"
+	"event.h"
+	"mission.h"
+	"weather.h"
+	"construction.h"
+	"calendar.h"
+	"posix_time.h"
+	"artifact.h"
+	"mutation.h"
+	"gamemode.h"
+	"action.h"
+	<vector>
+	<map>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mtype.h
+	<string>
+	<vector>
+	<math.h>
+	"mondeath.h"
+	"monattack.h"
+	"enums.h"
+	"color.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mondeath.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monattack.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\enums.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\color.h
+	"catacurse.h"
+	<curses.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\catacurse.h
+	<windows.h>
+	<stdio.h>
+
+1216149206 h:\portableapps\commonfiles\msys64\home\_extra\pdcurses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monster.h
+	"player.h"
+	"mtype.h"
+	"enums.h"
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\player.h
+	"item.h"
+	"monster.h"
+	"pldata.h"
+	"skill.h"
+	"bionics.h"
+	"trap.h"
+	"morale.h"
+	"inventory.h"
+	"artifact.h"
+	"mutation.h"
+	<vector>
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\item.h
+	<string>
+	<vector>
+	"itype.h"
+	"mtype.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\itype.h
+	<string>
+	<vector>
+	<sstream>
+	"color.h"
+	"enums.h"
+	"iuse.h"
+	"pldata.h"
+	"bodypart.h"
+	"skill.h"
+	"bionics.h"
+	"artifact.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\iuse.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\pldata.h
+	<sstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\bodypart.h
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\skill.h
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\bionics.h
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\artifact.h
+	<string>
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\trap.h
+	"color.h"
+	"monster.h"
+	"itype.h"
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\morale.h
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\inventory.h
+	"item.h"
+	<string>
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mutation.h
+	"pldata.h"
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\map.h
+	"catacurse.h"
+	<curses.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	"mapdata.h"
+	"mapitems.h"
+	"overmap.h"
+	"item.h"
+	"monster.h"
+	"npc.h"
+	"vehicle.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapdata.h
+	<vector>
+	<string>
+	"color.h"
+	"item.h"
+	"trap.h"
+	"monster.h"
+	"enums.h"
+	"computer.h"
+	"vehicle.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\computer.h
+	"output.h"
+	<vector>
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\output.h
+	"color.h"
+	<cstdarg>
+	<string>
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\vehicle.h
+	"tileray.h"
+	"color.h"
+	"item.h"
+	"veh_type.h"
+	<vector>
+	<string>
+	<fstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\tileray.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\veh_type.h
+	"color.h"
+	"itype.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapitems.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\overmap.h
+	"enums.h"
+	"string.h"
+	"omdata.h"
+	"mongroup.h"
+	"settlement.h"
+	"output.h"
+	<vector>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\omdata.h
+	<string>
+	<vector>
+	<bitset>
+	"mtype.h"
+	"itype.h"
+	"output.h"
+	"mongroup.h"
+	"mapdata.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mongroup.h
+	"mtype.h"
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\settlement.h
+	"npc.h"
+	"overmap.h"
+	"faction.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\npc.h
+	"player.h"
+	"monster.h"
+	"overmap.h"
+	"faction.h"
+	<vector>
+	<string>
+	<sstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\faction.h
+	<string>
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\crafting.h
+	<string>
+	<vector>
+	"itype.h"
+	"skill.h"
+	"rng.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\rng.h
+	<stdlib.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\event.h
+	"faction.h"
+	"line.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\line.h
+	<vector>
+	<string>
+	"enums.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission.h
+	<vector>
+	<string>
+	<sstream>
+	"itype.h"
+	"texthash.h"
+	"npc.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\texthash.h
+	<string>
+	<vector>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\weather.h
+	"color.h"
+	<string>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\construction.h
+	<vector>
+	<string>
+	"crafting.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\calendar.h
+	<string>
+	"weather.h"
+
+1487121952 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\posix_time.h
+	<time.h>
+	<errno.h>
+	<windows.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\gamemode.h
+	<vector>
+	<string>
+	"action.h"
+	"itype.h"
+	"mtype.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\action.h
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\keypress.h
+	"catacurse.h"
+	<curses.h>
+	<string>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\artifact.cpp
+	<sstream>
+	<vector>
+	"game.h"
+	"artifact.h"
+	"artifactdata.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\artifactdata.h
+	<vector>
+	"artifact.h"
+	"itype.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\bionics.cpp
+	"player.h"
+	"game.h"
+	"rng.h"
+	"keypress.h"
+	"item.h"
+	"bionics.h"
+	"line.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\bodypart.cpp
+	"bodypart.h"
+	"rng.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\calendar.cpp
+	<sstream>
+	"calendar.h"
+	"output.h"
+	"options.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\options.h
+	<string>
+
+1487126530 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\catacurse.cpp
+	"catacurse.h"
+	<cstdlib>
+	<fstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\color.cpp
+	"color.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\computer.cpp
+	"computer.h"
+	"game.h"
+	"monster.h"
+	"overmap.h"
+	"output.h"
+	<fstream>
+	<string>
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\construction.cpp
+	"game.h"
+	"setvector.h"
+	"output.h"
+	"keypress.h"
+	"player.h"
+	"inventory.h"
+	"mapdata.h"
+	"skill.h"
+	"crafting.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\setvector.h
+	<vector>
+	"itype.h"
+	"mongroup.h"
+	"mapitems.h"
+	"crafting.h"
+	"mission.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\crafting.cpp
+	<string>
+	<sstream>
+	"keypress.h"
+	"game.h"
+	"output.h"
+	"crafting.h"
+	"setvector.h"
+	"inventory.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\defense.cpp
+	"gamemode.h"
+	"game.h"
+	"setvector.h"
+	"keypress.h"
+	"itype.h"
+	"mtype.h"
+	<string>
+	<vector>
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\event.cpp
+	"event.h"
+	"npc.h"
+	"game.h"
+	"rng.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\faction.cpp
+	"faction.h"
+	"facdata.h"
+	"rng.h"
+	"math.h"
+	"output.h"
+	"omdata.h"
+	"game.h"
+	<sstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\facdata.h
+	<string>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\field.cpp
+	"rng.h"
+	"map.h"
+	"game.h"
+
+1487124304 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\game.cpp
+	"game.h"
+	"rng.h"
+	"keypress.h"
+	"output.h"
+	"skill.h"
+	"line.h"
+	"computer.h"
+	"weather_data.h"
+	"veh_interact.h"
+	"options.h"
+	"mapbuffer.h"
+	<fstream>
+	<sstream>
+	<math.h>
+	<unistd.h>
+	<dirent.h>
+	<sys/stat.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\weather_data.h
+	"weather.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\veh_interact.h
+	<vector>
+	"output.h"
+	"inventory.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapbuffer.h
+	"map.h"
+	"line.h"
+	<map>
+	<list>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\gamemode.cpp
+	"gamemode.h"
+	"output.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\help.cpp
+	"game.h"
+	"keypress.h"
+	"options.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\inventory.cpp
+	<sstream>
+	"inventory.h"
+	"game.h"
+	"keypress.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\inventory_ui.cpp
+	"game.h"
+	"output.h"
+	"keypress.h"
+	<string>
+	<vector>
+
+1487124810 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\item.cpp
+	"item.h"
+	"player.h"
+	"output.h"
+	"skill.h"
+	"game.h"
+	<sstream>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\itypedef.cpp
+	"itype.h"
+	"game.h"
+	"setvector.h"
+	<fstream>
+
+1487125194 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\iuse.cpp
+	"iuse.h"
+	"game.h"
+	"mapdata.h"
+	"keypress.h"
+	"output.h"
+	"rng.h"
+	"line.h"
+	"player.h"
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\keypress.cpp
+	"keypress.h"
+	"action.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\line.cpp
+	"line.h"
+	"map.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\main.cpp
+	"catacurse.h"
+	<curses.h>
+	<ctime>
+	"game.h"
+	"color.h"
+	"options.h"
+	"mapbuffer.h"
+
+1487125566 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\map.cpp
+	"map.h"
+	"output.h"
+	"rng.h"
+	"game.h"
+	"line.h"
+	"mapbuffer.h"
+	<cmath>
+	<stdlib.h>
+	<fstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapbuffer.cpp
+	"mapbuffer.h"
+	"game.h"
+	"output.h"
+	<fstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapgen.cpp
+	"map.h"
+	"omdata.h"
+	"mapitems.h"
+	"output.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mapitemsdef.cpp
+	"game.h"
+	"itype.h"
+	"omdata.h"
+	"setvector.h"
+	<cstdarg>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\melee.cpp
+	"player.h"
+	"bionics.h"
+	"game.h"
+	"keypress.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission_end.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission_fail.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission_place.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mission_start.cpp
+	"mission.h"
+	"game.h"
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\missiondef.cpp
+	"mission.h"
+	"setvector.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monattack.cpp
+	"mondeath.h"
+	"monster.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+	"bodypart.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mondeath.cpp
+	"mondeath.h"
+	"monster.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mongroupdef.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monitemsdef.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monmove.cpp
+	"monster.h"
+	"map.h"
+	"game.h"
+	"line.h"
+	"rng.h"
+	"pldata.h"
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\monster.cpp
+	"monster.h"
+	"map.h"
+	"mondeath.h"
+	"output.h"
+	"game.h"
+	"rng.h"
+	"item.h"
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mtypedef.cpp
+	"game.h"
+	"mondeath.h"
+	"monattack.h"
+	"itype.h"
+	"setvector.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mutation.cpp
+	"player.h"
+	"mutation.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\mutation_data.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\newcharacter.cpp
+	"player.h"
+	"output.h"
+	"rng.h"
+	"keypress.h"
+	"game.h"
+	<unistd.h>
+	<fstream>
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\npc.cpp
+	<fstream>
+	<sstream>
+	"npc.h"
+	"rng.h"
+	"map.h"
+	"game.h"
+	"bodypart.h"
+	"skill.h"
+	"output.h"
+	"line.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\npcmove.cpp
+	<sstream>
+	"npc.h"
+	"rng.h"
+	"game.h"
+	"line.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\npctalk.cpp
+	"npc.h"
+	"output.h"
+	"game.h"
+	"dialogue.h"
+	"rng.h"
+	"line.h"
+	"keypress.h"
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\dialogue.h
+	"player.h"
+	"output.h"
+	"npc.h"
+	<vector>
+	<string>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\options.cpp
+	"options.h"
+	"output.h"
+	<fstream>
+	<string>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\output.cpp
+	"catacurse.h"
+	<curses.h>
+	<string>
+	<vector>
+	<cstdarg>
+	<cstring>
+	<stdlib.h>
+	"color.h"
+	"output.h"
+	"rng.h"
+	"keypress.h"
+	"options.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\overmap.cpp
+	"catacurse.h"
+	<curses.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<fstream>
+	<vector>
+	<sstream>
+	"overmap.h"
+	"rng.h"
+	"line.h"
+	"settlement.h"
+	"game.h"
+	"npc.h"
+	"keypress.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\player.cpp
+	"player.h"
+	"bionics.h"
+	"mission.h"
+	"game.h"
+	"disease.h"
+	"addiction.h"
+	"keypress.h"
+	"moraledata.h"
+	"inventory.h"
+	"artifact.h"
+	"options.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\disease.h
+	"rng.h"
+	"game.h"
+	"bodypart.h"
+	<sstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\addiction.h
+	"rng.h"
+	"game.h"
+	"morale.h"
+	<sstream>
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\moraledata.h
+	<string>
+	"morale.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\posix_time.cpp
+	"posix_time.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\ranged.cpp
+	<vector>
+	<string>
+	"game.h"
+	"keypress.h"
+	"output.h"
+	"line.h"
+	"skill.h"
+	"rng.h"
+	"item.h"
+	"options.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\rng.cpp
+	"output.h"
+	"rng.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\settlement.cpp
+	"settlement.h"
+	"game.h"
+	"output.h"
+	"line.h"
+	"rng.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\setvector.cpp
+	"setvector.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\skill.cpp
+	"skill.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\texthash.cpp
+	"texthash.h"
+	<sstream>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\tileray.cpp
+	"tileray.h"
+	<math.h>
+	<stdlib.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\trapdef.cpp
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\trapfunc.cpp
+	"game.h"
+	"trap.h"
+	"rng.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\tutorial.cpp
+	"game.h"
+	"output.h"
+	"action.h"
+	"tutorial.h"
+
+1486928172 h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\tutorial.h
+	<string>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\veh_interact.cpp
+	<string>
+	"veh_interact.h"
+	"vehicle.h"
+	"keypress.h"
+	"game.h"
+	"output.h"
+	"crafting.h"
+	"options.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\veh_typedef.cpp
+	"vehicle.h"
+	"game.h"
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\vehicle.cpp
+	"vehicle.h"
+	"map.h"
+	"output.h"
+	"game.h"
+	"item.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\weather.cpp
+	"weather.h"
+	"game.h"
+	<vector>
+
+1487127286 source:h:\portableapps\commonfiles\msys64\home\peter7\forks\headswe\cataclysm\wish.cpp
+	"game.h"
+	"output.h"
+	"keypress.h"
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\action.cpp
+	"game.h"
+	"keypress.h"
+	<fstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\game.h
+	"mtype.h"
+	"monster.h"
+	"map.h"
+	"player.h"
+	"overmap.h"
+	"omdata.h"
+	"mapitems.h"
+	"crafting.h"
+	"trap.h"
+	"npc.h"
+	"faction.h"
+	"event.h"
+	"mission.h"
+	"weather.h"
+	"construction.h"
+	"calendar.h"
+	"posix_time.h"
+	"artifact.h"
+	"mutation.h"
+	"gamemode.h"
+	"action.h"
+	<vector>
+	<map>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mtype.h
+	<string>
+	<vector>
+	<math.h>
+	"mondeath.h"
+	"monattack.h"
+	"enums.h"
+	"color.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mondeath.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monattack.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\enums.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\color.h
+	"catacurse.h"
+	<curses.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\catacurse.h
+	<windows.h>
+	<stdio.h>
+
+1216149206 g:\portableapps\commonfiles\msys64\home\_extra\pdcurses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monster.h
+	"player.h"
+	"mtype.h"
+	"enums.h"
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\player.h
+	"item.h"
+	"monster.h"
+	"pldata.h"
+	"skill.h"
+	"bionics.h"
+	"trap.h"
+	"morale.h"
+	"inventory.h"
+	"artifact.h"
+	"mutation.h"
+	<vector>
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\item.h
+	<string>
+	<vector>
+	"itype.h"
+	"mtype.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\itype.h
+	<string>
+	<vector>
+	<sstream>
+	"color.h"
+	"enums.h"
+	"iuse.h"
+	"pldata.h"
+	"bodypart.h"
+	"skill.h"
+	"bionics.h"
+	"artifact.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\iuse.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\pldata.h
+	<sstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\bodypart.h
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\skill.h
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\bionics.h
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\artifact.h
+	<string>
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\trap.h
+	"color.h"
+	"monster.h"
+	"itype.h"
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\morale.h
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\inventory.h
+	"item.h"
+	<string>
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mutation.h
+	"pldata.h"
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\map.h
+	"catacurse.h"
+	<curses.h>
+	<stdlib.h>
+	<vector>
+	<string>
+	"mapdata.h"
+	"mapitems.h"
+	"overmap.h"
+	"item.h"
+	"monster.h"
+	"npc.h"
+	"vehicle.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapdata.h
+	<vector>
+	<string>
+	"color.h"
+	"item.h"
+	"trap.h"
+	"monster.h"
+	"enums.h"
+	"computer.h"
+	"vehicle.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\computer.h
+	"output.h"
+	<vector>
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\output.h
+	"color.h"
+	<cstdarg>
+	<string>
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\vehicle.h
+	"tileray.h"
+	"color.h"
+	"item.h"
+	"veh_type.h"
+	<vector>
+	<string>
+	<fstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\tileray.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\veh_type.h
+	"color.h"
+	"itype.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapitems.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\overmap.h
+	"enums.h"
+	"string.h"
+	"omdata.h"
+	"mongroup.h"
+	"settlement.h"
+	"output.h"
+	<vector>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\omdata.h
+	<string>
+	<vector>
+	<bitset>
+	"mtype.h"
+	"itype.h"
+	"output.h"
+	"mongroup.h"
+	"mapdata.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mongroup.h
+	"mtype.h"
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\settlement.h
+	"npc.h"
+	"overmap.h"
+	"faction.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\npc.h
+	"player.h"
+	"monster.h"
+	"overmap.h"
+	"faction.h"
+	<vector>
+	<string>
+	<sstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\faction.h
+	<string>
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\crafting.h
+	<string>
+	<vector>
+	"itype.h"
+	"skill.h"
+	"rng.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\rng.h
+	<stdlib.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\event.h
+	"faction.h"
+	"line.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\line.h
+	<vector>
+	<string>
+	"enums.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission.h
+	<vector>
+	<string>
+	<sstream>
+	"itype.h"
+	"texthash.h"
+	"npc.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\texthash.h
+	<string>
+	<vector>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\weather.h
+	"color.h"
+	<string>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\construction.h
+	<vector>
+	<string>
+	"crafting.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\calendar.h
+	<string>
+	"weather.h"
+
+1487121952 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\posix_time.h
+	<time.h>
+	<errno.h>
+	<windows.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\gamemode.h
+	<vector>
+	<string>
+	"action.h"
+	"itype.h"
+	"mtype.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\action.h
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\keypress.h
+	"catacurse.h"
+	<curses.h>
+	<string>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\artifact.cpp
+	<sstream>
+	<vector>
+	"game.h"
+	"artifact.h"
+	"artifactdata.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\artifactdata.h
+	<vector>
+	"artifact.h"
+	"itype.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\bionics.cpp
+	"player.h"
+	"game.h"
+	"rng.h"
+	"keypress.h"
+	"item.h"
+	"bionics.h"
+	"line.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\bodypart.cpp
+	"bodypart.h"
+	"rng.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\calendar.cpp
+	<sstream>
+	"calendar.h"
+	"output.h"
+	"options.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\options.h
+	<string>
+
+1487126530 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\catacurse.cpp
+	"catacurse.h"
+	<cstdlib>
+	<fstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\color.cpp
+	"color.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\computer.cpp
+	"computer.h"
+	"game.h"
+	"monster.h"
+	"overmap.h"
+	"output.h"
+	<fstream>
+	<string>
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\construction.cpp
+	"game.h"
+	"setvector.h"
+	"output.h"
+	"keypress.h"
+	"player.h"
+	"inventory.h"
+	"mapdata.h"
+	"skill.h"
+	"crafting.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\setvector.h
+	<vector>
+	"itype.h"
+	"mongroup.h"
+	"mapitems.h"
+	"crafting.h"
+	"mission.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\crafting.cpp
+	<string>
+	<sstream>
+	"keypress.h"
+	"game.h"
+	"output.h"
+	"crafting.h"
+	"setvector.h"
+	"inventory.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\defense.cpp
+	"gamemode.h"
+	"game.h"
+	"setvector.h"
+	"keypress.h"
+	"itype.h"
+	"mtype.h"
+	<string>
+	<vector>
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\event.cpp
+	"event.h"
+	"npc.h"
+	"game.h"
+	"rng.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\faction.cpp
+	"faction.h"
+	"facdata.h"
+	"rng.h"
+	"math.h"
+	"output.h"
+	"omdata.h"
+	"game.h"
+	<sstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\facdata.h
+	<string>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\field.cpp
+	"rng.h"
+	"map.h"
+	"game.h"
+
+1487124304 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\game.cpp
+	"game.h"
+	"rng.h"
+	"keypress.h"
+	"output.h"
+	"skill.h"
+	"line.h"
+	"computer.h"
+	"weather_data.h"
+	"veh_interact.h"
+	"options.h"
+	"mapbuffer.h"
+	<fstream>
+	<sstream>
+	<math.h>
+	<unistd.h>
+	<dirent.h>
+	<sys/stat.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\weather_data.h
+	"weather.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\veh_interact.h
+	<vector>
+	"output.h"
+	"inventory.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapbuffer.h
+	"map.h"
+	"line.h"
+	<map>
+	<list>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\gamemode.cpp
+	"gamemode.h"
+	"output.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\help.cpp
+	"game.h"
+	"keypress.h"
+	"options.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\inventory.cpp
+	<sstream>
+	"inventory.h"
+	"game.h"
+	"keypress.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\inventory_ui.cpp
+	"game.h"
+	"output.h"
+	"keypress.h"
+	<string>
+	<vector>
+
+1487124810 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\item.cpp
+	"item.h"
+	"player.h"
+	"output.h"
+	"skill.h"
+	"game.h"
+	<sstream>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\itypedef.cpp
+	"itype.h"
+	"game.h"
+	"setvector.h"
+	<fstream>
+
+1487125194 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\iuse.cpp
+	"iuse.h"
+	"game.h"
+	"mapdata.h"
+	"keypress.h"
+	"output.h"
+	"rng.h"
+	"line.h"
+	"player.h"
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\keypress.cpp
+	"keypress.h"
+	"action.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\line.cpp
+	"line.h"
+	"map.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\main.cpp
+	"catacurse.h"
+	<curses.h>
+	<ctime>
+	"game.h"
+	"color.h"
+	"options.h"
+	"mapbuffer.h"
+
+1487125566 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\map.cpp
+	"map.h"
+	"output.h"
+	"rng.h"
+	"game.h"
+	"line.h"
+	"mapbuffer.h"
+	<cmath>
+	<stdlib.h>
+	<fstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapbuffer.cpp
+	"mapbuffer.h"
+	"game.h"
+	"output.h"
+	<fstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapgen.cpp
+	"map.h"
+	"omdata.h"
+	"mapitems.h"
+	"output.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mapitemsdef.cpp
+	"game.h"
+	"itype.h"
+	"omdata.h"
+	"setvector.h"
+	<cstdarg>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\melee.cpp
+	"player.h"
+	"bionics.h"
+	"game.h"
+	"keypress.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission_end.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission_fail.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission_place.cpp
+	"mission.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mission_start.cpp
+	"mission.h"
+	"game.h"
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\missiondef.cpp
+	"mission.h"
+	"setvector.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monattack.cpp
+	"mondeath.h"
+	"monster.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+	"bodypart.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mondeath.cpp
+	"mondeath.h"
+	"monster.h"
+	"game.h"
+	"rng.h"
+	"line.h"
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mongroupdef.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monitemsdef.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monmove.cpp
+	"monster.h"
+	"map.h"
+	"game.h"
+	"line.h"
+	"rng.h"
+	"pldata.h"
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\monster.cpp
+	"monster.h"
+	"map.h"
+	"mondeath.h"
+	"output.h"
+	"game.h"
+	"rng.h"
+	"item.h"
+	<sstream>
+	<fstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mtypedef.cpp
+	"game.h"
+	"mondeath.h"
+	"monattack.h"
+	"itype.h"
+	"setvector.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mutation.cpp
+	"player.h"
+	"mutation.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\mutation_data.cpp
+	"game.h"
+	"setvector.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\newcharacter.cpp
+	"player.h"
+	"output.h"
+	"rng.h"
+	"keypress.h"
+	"game.h"
+	<unistd.h>
+	<fstream>
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\npc.cpp
+	<fstream>
+	<sstream>
+	"npc.h"
+	"rng.h"
+	"map.h"
+	"game.h"
+	"bodypart.h"
+	"skill.h"
+	"output.h"
+	"line.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\npcmove.cpp
+	<sstream>
+	"npc.h"
+	"rng.h"
+	"game.h"
+	"line.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\npctalk.cpp
+	"npc.h"
+	"output.h"
+	"game.h"
+	"dialogue.h"
+	"rng.h"
+	"line.h"
+	"keypress.h"
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\dialogue.h
+	"player.h"
+	"output.h"
+	"npc.h"
+	<vector>
+	<string>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\options.cpp
+	"options.h"
+	"output.h"
+	<fstream>
+	<string>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\output.cpp
+	"catacurse.h"
+	<curses.h>
+	<string>
+	<vector>
+	<cstdarg>
+	<cstring>
+	<stdlib.h>
+	"color.h"
+	"output.h"
+	"rng.h"
+	"keypress.h"
+	"options.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\overmap.cpp
+	"catacurse.h"
+	<curses.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<fstream>
+	<vector>
+	<sstream>
+	"overmap.h"
+	"rng.h"
+	"line.h"
+	"settlement.h"
+	"game.h"
+	"npc.h"
+	"keypress.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\player.cpp
+	"player.h"
+	"bionics.h"
+	"mission.h"
+	"game.h"
+	"disease.h"
+	"addiction.h"
+	"keypress.h"
+	"moraledata.h"
+	"inventory.h"
+	"artifact.h"
+	"options.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\disease.h
+	"rng.h"
+	"game.h"
+	"bodypart.h"
+	<sstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\addiction.h
+	"rng.h"
+	"game.h"
+	"morale.h"
+	<sstream>
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\moraledata.h
+	<string>
+	"morale.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\posix_time.cpp
+	"posix_time.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\ranged.cpp
+	<vector>
+	<string>
+	"game.h"
+	"keypress.h"
+	"output.h"
+	"line.h"
+	"skill.h"
+	"rng.h"
+	"item.h"
+	"options.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\rng.cpp
+	"output.h"
+	"rng.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\settlement.cpp
+	"settlement.h"
+	"game.h"
+	"output.h"
+	"line.h"
+	"rng.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\setvector.cpp
+	"setvector.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\skill.cpp
+	"skill.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\texthash.cpp
+	"texthash.h"
+	<sstream>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\tileray.cpp
+	"tileray.h"
+	<math.h>
+	<stdlib.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\trapdef.cpp
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\trapfunc.cpp
+	"game.h"
+	"trap.h"
+	"rng.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\tutorial.cpp
+	"game.h"
+	"output.h"
+	"action.h"
+	"tutorial.h"
+
+1486928172 g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\tutorial.h
+	<string>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\veh_interact.cpp
+	<string>
+	"veh_interact.h"
+	"vehicle.h"
+	"keypress.h"
+	"game.h"
+	"output.h"
+	"crafting.h"
+	"options.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\veh_typedef.cpp
+	"vehicle.h"
+	"game.h"
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\vehicle.cpp
+	"vehicle.h"
+	"map.h"
+	"output.h"
+	"game.h"
+	"item.h"
+	<sstream>
+	<stdlib.h>
+	"catacurse.h"
+	<curses.h>
+
+1486928172 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\weather.cpp
+	"weather.h"
+	"game.h"
+	<vector>
+
+1487127286 source:g:\portableapps\commonfiles\msys64\home\peter7\forks\cataclysm\wish.cpp
+	"game.h"
+	"output.h"
+	"keypress.h"
+	<sstream>
+
