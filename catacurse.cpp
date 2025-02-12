@@ -1,4 +1,4 @@
-#if (defined __MINGW32__ || defined _WIN32 || defined WINDOWS)
+#if (defined _WIN32 || defined WINDOWS)
 #include "catacurse.h"
 #include <cstdlib>
 #include <fstream>
@@ -80,7 +80,7 @@ bool WinCreate()
 //Unregisters, releases the DC if needed, and destroys the window.
 void WinDestroy()
 {
-    if ((WindowDC > 0) && (ReleaseDC(WindowHandle, WindowDC) == 0)){
+    if ((WindowDC != NULL) && (ReleaseDC(WindowHandle, WindowDC) == 0)){
         WindowDC = 0;
     }
     if ((!WindowHandle == 0) && (!(DestroyWindow(WindowHandle)))){
@@ -253,7 +253,8 @@ void CheckMessages()
 //***********************************
 
 //Basic Init, create the font, backbuffer, etc
-WINDOW *initscr(void)
+//WINDOW *initscr(void)
+WINDOW* initscr()
 {
    // _windows = new WINDOW[20];         //initialize all of our variables
     BITMAPINFO bmi;
@@ -264,8 +265,8 @@ char * typeface_c;
 std::ifstream fin;
 fin.open("data\\FONTDATA");
  if (!fin.is_open()){
-     MessageBox(WindowHandle, "Failed to open FONTDATA, loading defaults.",
-                NULL, NULL);
+//  MessageBox(WindowHandle, "Failed to open FONTDATA, loading defaults.", NULL, NULL);
+    MessageBoxA(NULL, "Failed to open FONTDATA, loading defaults.", "Error", MB_OK);
      fontheight=16;
      fontwidth=8;
  } else {
@@ -275,8 +276,8 @@ fin.open("data\\FONTDATA");
      fin >> fontwidth;
      fin >> fontheight;
      if ((fontwidth <= 4) || (fontheight <=4)){
-         MessageBox(WindowHandle, "Invalid font size specified!",
-                    NULL, NULL);
+//         MessageBox(WindowHandle, "Invalid font size specified!", NULL, NULL);
+        MessageBoxA(NULL, "Invalid font size specified!", "Error", MB_OK);
         fontheight=16;
         fontwidth=8;
      }
@@ -311,8 +312,8 @@ fin.open("data\\FONTDATA");
                       PROOF_QUALITY, FF_MODERN, typeface_c);   //Create our font
 
   } else {
-      MessageBox(WindowHandle, "Failed to load default font, using FixedSys.",
-                NULL, NULL);
+//      MessageBox(WindowHandle, "Failed to load default font, using FixedSys.", NULL, NULL);
+      MessageBoxA(NULL, "Failed to load default font, using FixedSys.", "Error", MB_OK);
        font = CreateFont(fontheight, fontwidth, 0, 0, FW_NORMAL, FALSE, FALSE, FALSE,
                       ANSI_CHARSET, OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,
                       PROOF_QUALITY, FF_MODERN, "FixedSys");   //Create our font

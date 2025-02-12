@@ -1882,9 +1882,8 @@ void game::add_msg(const char* msg, ...)
   return;
  }
 
-//***
-// if (messages.size() == 256)
-//  messages.erase(messages.begin());
+ if (messages.size() == 256)
+  messages.erase(messages.begin());
 /*
  size_t split;
  while (s.length() > maxlength) {
@@ -4194,6 +4193,8 @@ bool game::pl_refill_vehicle (vehicle &veh, int part, bool test)
                 u.inv.remove_item (i_itm);
         }
     }
+
+    return true;
 }
 
 void game::handbrake ()

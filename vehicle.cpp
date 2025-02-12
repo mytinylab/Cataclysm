@@ -316,7 +316,7 @@ void vehicle::remove_part (int p)
     parts.erase(parts.begin() + p);
     find_external_parts ();
     find_exhaust ();
-    precalc_mounts (0, face.dir());    
+    precalc_mounts (0, face.dir());
     insides_dirty = true;
 }
 
@@ -393,7 +393,7 @@ nc_color vehicle::part_color (int p)
     else
     if (parts[p].blood > 0)
         return c_ltred;
-    
+
     if (parts[pd].hp <= 0)
         return part_info(pd).color_broken;
 
@@ -1628,8 +1628,8 @@ int vehicle::damage_direct (int p, int dmg, int type)
         else
         if (parts[p].hp <= 0 && part_flag(p, vpf_unmount_on_damage))
         {
-            g->m.add_item (global_x() + parts[p].precalc_dx[0], 
-                           global_y() + parts[p].precalc_dy[0], 
+            g->m.add_item (global_x() + parts[p].precalc_dx[0],
+                           global_y() + parts[p].precalc_dy[0],
                            g->itypes[part_info(p).item], g->turn);
             remove_part (p);
         }
@@ -1647,7 +1647,7 @@ void vehicle::leak_fuel (int p)
     if (ft == AT_GAS)
     {
         int x = global_x();
-        int y = global_y(); 
+        int y = global_y();
         for (int i = x - 2; i <= x + 2; i++)
             for (int j = y - 2; j <= y + 2; j++)
                 if (g->m.move_cost(i, j) > 0 && one_in(2))
@@ -1772,5 +1772,7 @@ bool vehicle::fire_turret_internal (int p, it_gun &gun, it_ammo &ammo, int charg
         for (int i = 0; i < traj.size(); i++)
             g->m.add_field(g, traj[i].x, traj[i].y, fd_fire, 1);
     }
+
+    return true;
 }
 

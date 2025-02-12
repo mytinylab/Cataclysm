@@ -1,55 +1,19 @@
-These files are a fork of 2017/02/16 Whales' Cataclysm at https://github.com/Whales/Cataclysm
-The files have been modified to build and compile in Windows using Code::Blocks and MinGW64.
+This is a fork of Whales/Cataclysm http://github.com/Whales/Cataclysm to make it work in Windows.
 
-This worked for me to build and compile it.
-* install Msys64 for 64 bit computers go to  https://github.com/msys2/msys2/wiki/MSYS2-installation and click on the "64 bit" link. Download the file that looks like msys2-x86_64-20161025.exe
-* Now you need to update Mingw64 in your msys64 folder:
-  ** run msys64\mingw64.exe
-  ** once its command shell opens update it by typing: pacman -Syuu
-  ** it will get stuck saying you need to close it. Click on the X in the window to close it.
-  ** run msys64\mingw64.exe again
-  ** again type: pacman -Syuu
-  ** These are all needed for Cataclysm-DDA and some are not needed for Cataclysm, but I installed them all:
-	pacman -S mingw-w64-x86_64-gcc
-	pacman -S mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_image mingw-w64-x86_64-SDL2_mixer mingw-w64-x86_64-SDL2_ttf
-	pacman -S mingw-w64-x86_64-ncurses
-	pacman -S mingw-w64-x86_64-pkg-config mingw-w64-x86_64-libwebp
-	pacman -S git make
-	pacman -S mingw-w64-x86_64-lua
-	pacman -S mingw-w64-x86_64-clang mingw-w64-i686-clang
-	
-  ** Download pdcurses at http://pdcurses.sourceforge.net/. The file it offered me was at sourceforge, pdcurs34.zip
-  ** I uninstalled pdcurs34 into folder msys64\home\_extra\pdcurses that I use to store these things. 
-  ** Then compile pdcurses. 
-     *** edit pdcurses\win32\gccwin32.mak and rewrite "copy" in line
-         -copy pdcurses.a panel.a
-	 as "cp"
-	 -cp pdcurses.a panel.a
-     *** then compile and build pdcurses: make -f gccwin32.mak DLL=Y WIDE=Y UTF8=Y
+Download MSYS2: https://www.msys2.org/
+Run mingw64.exe
+run command: make -f MakeFile.Windows
+It will produce an executable. Run it from mingw64: ./cataclysm.exe
 
-  * Manually edit file Cataclysm.cbp so that the paths are those in your computer.
+The only thing that's not working is martial arts in itypedef.cpp and setvector.cpp.
+That code is commented out for now. It will be fixed later.
 
-  * install Code::Blocks from http://www.codeblocks.org/downloads
-  * from Code::Blocks open cataclysm.cbp and then click Build
 
-  * I have msys64 and Code::Blocks in a USB. Make sure you have these set in your system
-  or run mingw64 and Code::Blocks with a batch file similar to these. These are at the same level as the CodeBlocks and msys64 directories. What these do is create temporary settings for my system path because my dev environment is in a USB and I don't want to pollute the system path of the computers I run these from.
-  Run_CodeBlocks.bat:
-	setlocal
-	set PDCURSES_SRCDIR = %~dp0\msys64\home\_extra\pdcurses\	path=%~dp0\msys64\msysw64\bin;%~dp0\msys64\usr\bin;%~dp0\msys64\mingw64\include;%~dp0\msys64\mingw64\include\SDL2\;%~dp0\msys64\home\_extra\pdcurses\;%path%
-	%~dp0\CodeBlocks\_RUN\codeblocks.exe
-	pause
-	endlocal
-  Run_Mingw64.bat:
-	setlocal
-	set PDCURSES_SRCDIR= %~dp0\msys64\home\_extra\pdcurses\
-	path=%~dp0\msys64\mingw64\bin;%path%
-	%~dp0\msys64\mingw64.exe
-	pause
-	endlocal
- 
-  * Good luck!
-================================================================================
+
+
+** ORIGINAL README **
+Hi ManualDetonation!
+
 Cataclysm is a post-apocalyptic roguelike, set in the countryside of New England
 after a devastating plague of monsters and zombies.
 
