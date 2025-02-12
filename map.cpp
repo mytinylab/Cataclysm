@@ -1912,12 +1912,14 @@ void map::drawsq(WINDOW* w, player &u, int x, int y, bool invert,
   mvwputch    (w, j, k, tercol, sym);
 }
 
-//WIP: faster map::sees
 /*
+//WIP: faster map::sees
 bool map::sees(int Fx, int Fy, int Tx, int Ty, int range, int &tc)
 {
  int dx = abs(Tx - Fx);
  int dy = abs(Ty - Fy);
+ int x = Fx; // Initialize x with a value
+ int y = Fy; // Initialize y with a value
  if (dx == 0) { // Infinite slope, special case
   tc = 0; // doesn't matter who even cares
   for (int y = Fy; y <= Ty; y++) {
@@ -1928,9 +1930,7 @@ bool map::sees(int Fx, int Fy, int Tx, int Ty, int range, int &tc)
  }
  for (int x = Fx; x <= Tx; x++) {
   int Yhl =
-*/
 
-/*
 map::sees based off code by Steve Register [arns@arns.freeservers.com]
 http://roguebasin.roguelikedevelopment.org/index.php?title=Simple_Line_of_Sight
 */

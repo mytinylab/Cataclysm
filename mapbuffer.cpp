@@ -7,6 +7,7 @@ mapbuffer MAPBUFFER;
 
 bool pcomp(point lhs, point rhs)
 {
+    return (lhs.x < rhs.x) || (lhs.x == rhs.x && lhs.y < rhs.y);
 };
 
 
@@ -39,6 +40,8 @@ bool mapbuffer::add_submap(int x, int y, int z, submap *sm)
   sm->turn_last_touched = int(master_game->turn);
  submap_list.push_back(sm);
  submaps[p] = sm;
+
+ return true;
 }
 
 submap* mapbuffer::lookup_submap(int x, int y, int z)
@@ -77,11 +80,11 @@ void mapbuffer::save()
   }
  // Dump the radiation
   for (int j = 0; j < SEEY; j++) {
-   for (int i = 0; i < SEEX; i++) 
+   for (int i = 0; i < SEEX; i++)
     fout << sm->rad[i][j] << " ";
   }
   fout << std::endl;
- 
+
  // Items section; designate it with an I.  Then check itm[][] for each square
  //   in the grid and print the coords and the item's details.
  // Designate it with a C if it's contained in the prior item.
@@ -107,7 +110,7 @@ void mapbuffer::save()
      std::endl;
    }
   }
- 
+
  // Output the fields
   field tmpf;
   for (int j = 0; j < SEEY; j++) {

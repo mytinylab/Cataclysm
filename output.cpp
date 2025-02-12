@@ -69,6 +69,8 @@ nc_color invert_color(nc_color c)
    case c_pink:    return i_magenta;
    case c_brown:
    case c_yellow:  return i_brown;
+   default:        return i_white; // Add a default return value
+
   }
  }
  switch (c) {
@@ -87,6 +89,7 @@ nc_color invert_color(nc_color c)
   case c_ltblue:  return i_ltblue;
   case c_ltcyan:  return i_ltcyan;
   case c_pink:    return i_pink;
+  default:        return i_white; // Add a default return value
  }
 }
 
@@ -500,7 +503,7 @@ char popup_getkey(const char *mes, ...)
  }
  line_num++;
  mvwprintz(w, line_num, 1, c_white, tmp.c_str());
- 
+
  wrefresh(w);
  char ch = getch();;
  werase(w);
@@ -611,7 +614,7 @@ void popup_top(const char *mes, ...)
  }
  line_num++;
  mvwprintz(w, line_num, 1, c_white, tmp.c_str());
- 
+
  wrefresh(w);
  char ch;
  do
@@ -662,7 +665,7 @@ void popup(const char *mes, ...)
  }
  line_num++;
  mvwprintz(w, line_num, 1, c_white, tmp.c_str());
- 
+
  wrefresh(w);
  char ch;
  do
@@ -713,7 +716,7 @@ void popup_nowait(const char *mes, ...)
  }
  line_num++;
  mvwprintz(w, line_num, 1, c_white, tmp.c_str());
- 
+
  wrefresh(w);
  delwin(w);
  refresh();
@@ -770,7 +773,7 @@ char rand_char()
 }
 
 // this translates symbol y, u, n, b to NW, NE, SE, SW lines correspondingly
-// h, j, c to horizontal, vertical, cross correspondingly 
+// h, j, c to horizontal, vertical, cross correspondingly
 long special_symbol (char sym)
 {
     switch (sym)

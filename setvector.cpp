@@ -1,5 +1,10 @@
 #include "setvector.h"
 
+#include <vector>
+#include <string>
+#include <cstdarg>
+#include "itype.h" // Include the header where technique_id is defined
+
 void setvector(std::vector<itype_id> &vec, ... )
 {
  va_list ap;
@@ -57,6 +62,7 @@ void setvector(std::vector<mission_origin> &vec, ... )
  va_end(ap);
 }
 
+/*
 void setvector(std::vector<std::string> &vec, ... )
 {
  va_list ap;
@@ -65,8 +71,19 @@ void setvector(std::vector<std::string> &vec, ... )
  while (tmp = (char *)va_arg(ap, int))
   vec.push_back((std::string)(tmp));
  va_end(ap);
-}
+}*/
+void setvector(std::vector<std::string> &vec, ...)
+{
+    va_list ap;
+    va_start(ap, vec);
+    char *tmpname;
 
+    while ((tmpname = va_arg(ap, char*)) != nullptr) {
+        vec.push_back(std::string(tmpname));
+    }
+
+    va_end(ap);
+}
 
 template <class T> void setvec(std::vector<T> &vec, ... )
 {
@@ -77,7 +94,7 @@ template <class T> void setvec(std::vector<T> &vec, ... )
   vec.push_back(tmp);
  va_end(ap);
 }
- 
+
 void setvector(std::vector<pl_flag> &vec, ... )
 {
  va_list ap;
@@ -108,28 +125,56 @@ void setvector(std::vector<monster_trigger> &vec, ... )
  va_end(ap);
 }
 
+/*
 void setvector(std::vector<moncat_id> &vec, ... )
 {
- va_list ap;
- va_start(ap, vec);
- moncat_id tmp;
- while (tmp = (moncat_id)va_arg(ap, int))
-  vec.push_back(tmp);
- va_end(ap);
+    va_list ap;
+    va_start(ap, vec);
+    moncat_id tmp;
+    while (tmp = (moncat_id)va_arg(ap, int))
+        vec.push_back(tmp);
+    va_end(ap);
 }
 
 void setvector(std::vector<style_move> &vec, ... )
 {
- va_list ap;
- va_start(ap, vec);
- char *tmpname;
- technique_id tmptech;
- int tmplevel;
+    va_list ap;
+    va_start(ap, vec);
+    char *tmpname;
+    technique_id tmptech;
+    int tmplevel;
 
- while (tmpname = (char *)va_arg(ap, int)) {
-  tmptech = (technique_id)va_arg(ap, int);
-  tmplevel = (int)va_arg(ap, int);
-  vec.push_back( style_move(tmpname, tmptech, tmplevel) );
- }
- va_end(ap);
+    while (tmpname = (char *)va_arg(ap, int)) {
+        tmptech = (technique_id)va_arg(ap, int);
+        tmplevel = (int)va_arg(ap, int);
+        vec.push_back( style_move(tmpname, tmptech, tmplevel) );
+    }
+    va_end(ap);
+}
+*/
+
+void setvector(std::vector<moncat_id> &vec, ...)
+{
+    va_list ap;
+    va_start(ap, vec);
+    moncat_id tmp;
+    while ((tmp = static_cast<moncat_id>(va_arg(ap, int))) != 0)
+        vec.push_back(tmp);
+    va_end(ap);
+}
+
+void setvector(std::vector<style_move> &vec, ...)
+{
+    va_list ap;
+    va_start(ap, vec);
+    char *tmpname;
+    technique_id tmptech;
+    int tmplevel;
+
+    while ((tmpname = va_arg(ap, char*)) != nullptr) {
+        tmptech = static_cast<technique_id>(va_arg(ap, int));
+        tmplevel = va_arg(ap, int);
+        vec.push_back(style_move(tmpname, tmptech, tmplevel));
+    }
+    va_end(ap);
 }
