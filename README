@@ -5,11 +5,6 @@ Run mingw64.exe
 run command: make -f MakeFile.Windows
 It will produce an executable. Run it from mingw64: ./cataclysm.exe
 
-The only thing that's not working is martial arts in itypedef.cpp and setvector.cpp.
-That code is commented out for now. It will be fixed later.
-
-
-
 
 ** ORIGINAL README **
 Hi ManualDetonation!

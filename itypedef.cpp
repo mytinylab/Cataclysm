@@ -3434,6 +3434,7 @@ itypes.push_back(new it_style(index, 0, 0, name, description, '$', \
                               c_white, MNULL, MNULL, 0, 0, 0, 0, 0, 0))
 
 STYLE("karate", "karate is cool");
+*/
 
 
 STYLE("karate", 2, "\
@@ -3645,7 +3646,7 @@ attacks with no penalty.",
 "stumble and leer at", TEC_FEINT, 3,
 "counter-attack", TEC_COUNTER, 4
 );
-*/
+
 
  if (itypes.size() != num_all_items)
   debugmsg("%d items, %d itypes (+bio)", itypes.size(), num_all_items - 1);
